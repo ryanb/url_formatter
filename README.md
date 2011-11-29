@@ -16,7 +16,7 @@ gem "url_formatter"
 
 ## Usage
 
-Call `format_url` in an ActiveRecord class and pass the name of the attribute you wish to format into a URL and validate.
+Call [format_url](http://rubydoc.info/github/ryanb/url_formatter/master/UrlFormatter/ModelAdditions:format_url) in an ActiveRecord class and pass the name of the attribute you wish to format into a URL and validate.
 
 ```ruby
 class Comment < ActiveRecord::Base
