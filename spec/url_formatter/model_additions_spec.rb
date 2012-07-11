@@ -19,4 +19,9 @@ describe UrlFormatter::ModelAdditions do
     comment.website = "example.com"
     comment.should be_valid
   end
+
+  it "allows a nil url to be valid" do
+    comment = Comment.new(website: nil)
+    comment.should be_valid
+  end
 end
