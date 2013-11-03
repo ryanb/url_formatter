@@ -12,6 +12,6 @@ module UrlFormatter
   end
 
   def self.url_regexp
-    /^https?:\/\/([^\s:@]+:[^\s:@]*@)?[-[[:alnum:]]]+(\.[-[[:alnum:]]]+)+\.?(:\d{1,5})?([\/?]\S*)?$/iux
+    /^https?:\/\/([\A\s:@]+:[\A\s:@]*@)?[-[[:alnum:]]]+(\.[-[[:alnum:]]]+)+\.?(:\d{1,5})?([\/?]\S*)?\z/iux
   end
 end
